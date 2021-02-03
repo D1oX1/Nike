@@ -346,3 +346,22 @@ ul {
   max-width: 1500px;
   margin: 0 auto;
 }
+span {
+  display: block;
+}
+.btn {
+  background-color: #3954d9;
+  color: #ffffff;
+  padding: 19px 28px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-family: 'Montserrat-Regular';
+}
+.link {
+  color: #3753da;
+  font-family: 'Montserrat-SemiBold';
+  &:hover {
+    color: #737373;
+    text-shadow: 0 6px 6px #000000;
+  }
+}
