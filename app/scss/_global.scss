@@ -2,8 +2,12 @@
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  box-sizing: border-box;
 }
-
+*::before,
+*::after {
+    box-sizing: inherit;
+}
 /* Sections
    ========================================================================== */
 
@@ -13,6 +17,7 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
 }
 
 /**
@@ -343,8 +348,8 @@ ul {
 }
 .container {
   max-width: 1500px;
-  width: 100%;
   margin: 0 auto;
+  padding: 0 20px;
 }
 span {
   display: block;
@@ -356,6 +361,11 @@ span {
   border-radius: 25px;
   text-decoration: none;
   font-family: 'Montserrat-Regular';
+  cursor: pointer;
+  border: 1px solid transparent;
+  &:focus {
+    outline: transparent;
+  }
 }
 .link {
   color: #3753da;
